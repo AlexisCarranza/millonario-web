@@ -1,0 +1,17 @@
+[
+  { "valor": 100, "pregunta": "¿De qué color es el caballo blanco de San Martín?", "opciones": { "A": "Negro", "B": "Blanco", "C": "Café", "D": "Gris" }, "correcta": "B" },
+  { "valor": 200, "pregunta": "¿Colores de la bandera de Ecuador?", "opciones": { "A": "Blanco", "B": "Negro, amarillo, fucsia", "C": "Amarillo, azul, rojo", "D": "Verde, azul, caqui" }, "correcta": "C" },
+  { "valor": 300, "pregunta": "¿Qué animal es la mascota del Giro de Italia?", "opciones": { "A": "Perro", "B": "Cabra", "C": "Lobo", "D": "Gato" }, "correcta": "D" },
+  { "valor": 500, "pregunta": "El Tour de Francia es una famosa competencia de:", "opciones": { "A": "Ciclismo", "B": "Carros de carreras", "C": "Bolos", "D": "Patinaje" }, "correcta": "A" },
+  { "valor": 1000, "pregunta": "Al periódico que se publica en horas de la tarde se le denomina:", "opciones": { "A": "Pristino", "B": "Clandestino", "C": "Vespertino", "D": "Matutino" }, "correcta": "C" },
+  { "valor": 2000, "pregunta": "¿Qué clase de palabra es \"según\"?", "opciones": { "A": "Sustantivo", "B": "Adjetivo", "C": "Preposición", "D": "Verbo" }, "correcta": "C" },
+  { "valor": 4000, "pregunta": "¿Qué elemento químico es representado por el símbolo \"P\"?", "opciones": { "A": "Boro", "B": "Rubidio", "C": "Antimonio", "D": "Fósforo" }, "correcta": "D" },
+  { "valor": 8000, "pregunta": "¿Cuál fue la sede de la Copa Mundial Femenina de Fútbol 2011?", "opciones": { "A": "Sudáfrica", "B": "Perú", "C": "Alemania", "D": "Holanda" }, "correcta": "C" },
+  { "valor": 16000, "pregunta": "El peltre es una aleación de estaño, cobre, antimonio y:", "opciones": { "A": "Plata", "B": "Plomo", "C": "Oro", "D": "Hierro" }, "correcta": "B" },
+  { "valor": 25000, "pregunta": "Una persona que padece polidipsia siente una constante necesidad de:", "opciones": { "A": "Beber", "B": "Correr", "C": "Hablar", "D": "Dormir" }, "correcta": "A" },
+  { "valor": 50000, "pregunta": "La jibia es un:", "opciones": { "A": "Pez", "B": "Molusco", "C": "Reptil", "D": "Insecto" }, "correcta": "B" },
+  { "valor": 100000, "pregunta": "¿Dónde se desarrolló la civilización etrusca?", "opciones": { "A": "Extremo oriente", "B": "Norte de África", "C": "Península itálica", "D": "Cáucaso" }, "correcta": "C" },
+  { "valor": 250000, "pregunta": "¿Quién ganó el premio Óscar a mejor actor en 2015?", "opciones": { "A": "Benedict Cumberbatch", "B": "Bradley Cooper", "C": "Denzel Washington", "D": "Eddie Redmayne" }, "correcta": "D" },
+  { "valor": 500000, "pregunta": "¿Quién fue el presidente número 35 de Colombia?", "opciones": { "A": "Miguel Abadía Méndez", "B": "Marco Fidel Suárez", "C": "José María Campo", "D": "Carlos Holguín Mallarino" }, "correcta": "A" },
+  { "valor": 1000000, "pregunta": "¿En qué año murió el apóstol Pablo?", "opciones": { "A": "71", "B": "65", "C": "33", "D": "29" }, "correcta": "B" }
+]

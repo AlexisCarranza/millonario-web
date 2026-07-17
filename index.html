@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¿Quién Quiere Ser Millonario?</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- PANTALLA DE INICIO -->
+  <section id="screen-start" class="screen active">
+    <div class="logo-wrap">
+      <div class="logo-circle">
+        <span class="logo-text">MILLONARIO</span>
+      </div>
+    </div>
+    <button id="btn-start" class="btn-main">Vamos a Jugar!</button>
+    <button id="btn-settings" class="btn-link">Configurar preguntas</button>
+  </section>
+
+  <!-- PANTALLA DE CONFIGURACIÓN -->
+  <section id="screen-settings" class="screen">
+    <h2>Configuración</h2>
+    <p>Las preguntas se cargan desde <code>data/questions.json</code>. Edita ese archivo para cambiar el contenido del juego (no necesitas tocar el código).</p>
+    <p id="load-status"></p>
+    <button id="btn-back-start" class="btn-main">Volver</button>
+  </section>
+
+  <!-- PANTALLA DE JUEGO -->
+  <section id="screen-game" class="screen">
+
+    <div class="game-layout">
+      <div class="stage">
+
+        <div id="question-box" class="question-box">
+          <span id="question-text">Cargando pregunta…</span>
+        </div>
+
+        <div class="answers-grid">
+          <button class="answer-btn" data-letter="A"><span class="letter">A</span><span class="answer-text" id="ans-A"></span></button>
+          <button class="answer-btn" data-letter="B"><span class="letter">B</span><span class="answer-text" id="ans-B"></span></button>
+          <button class="answer-btn" data-letter="C"><span class="letter">C</span><span class="answer-text" id="ans-C"></span></button>
+          <button class="answer-btn" data-letter="D"><span class="letter">D</span><span class="answer-text" id="ans-D"></span></button>
+        </div>
+
+        <div class="lifelines">
+          <button id="ll-5050" class="lifeline-btn" title="50 / 50">50:50</button>
+          <button id="ll-audience" class="lifeline-btn" title="Preguntar al público">👥</button>
+          <button id="ll-phone" class="lifeline-btn" title="Llamar a un amigo">📞</button>
+        </div>
+
+        <div class="controls">
+          <button id="btn-reveal" class="btn-control">Revelar Respuesta</button>
+          <button id="btn-continue" class="btn-control" disabled>Continuar</button>
+          <button id="btn-walk" class="btn-control btn-walk">Retirarse</button>
+        </div>
+      </div>
+
+      <div class="money-ladder" id="money-ladder">
+        <!-- se llena por JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PANTALLA PREGUNTAR AL PÚBLICO -->
+  <section id="screen-audience" class="screen">
+    <h2>El público responde…</h2>
+    <div class="audience-bars" id="audience-bars"></div>
+    <button id="btn-audience-back" class="btn-main">Volver a la pregunta</button>
+  </section>
+
+  <!-- PANTALLA LLAMADA A UN AMIGO -->
+  <section id="screen-phone" class="screen">
+    <h2>📞 Llamando a tu amigo…</h2>
+    <p id="phone-text" class="phone-text"></p>
+    <button id="btn-phone-back" class="btn-main">Volver a la pregunta</button>
+  </section>
+
+  <!-- PANTALLA FINAL -->
+  <section id="screen-end" class="screen">
+    <h2 id="end-title">¡Juego terminado!</h2>
+    <p id="end-amount" class="end-amount"></p>
+    <button id="btn-restart" class="btn-main">Jugar de nuevo</button>
+  </section>
+
+  <audio id="snd-intro" src="audio/intro.mp3" preload="auto"></audio>
+  <audio id="snd-correct" src="audio/correct.mp3" preload="auto"></audio>
+  <audio id="snd-wrong" src="audio/wrong.mp3" preload="auto"></audio>
+  <audio id="snd-select" src="audio/select.mp3" preload="auto"></audio>
+  <audio id="snd-reveal" src="audio/reveal.mp3" preload="auto"></audio>
+  <audio id="snd-tension" src="audio/tension.mp3" preload="auto" loop></audio>
+  <audio id="snd-final" src="audio/final.mp3" preload="auto"></audio>
+
+  <script src="js/game.js"></script>
+</body>
+</html>
